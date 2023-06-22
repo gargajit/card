@@ -5,14 +5,13 @@ background.solid: #eee
 align-content: center
 spacing.fixed.px: 20
 
--- card:
 
--- card: Purply
 
-A purple scenery can evoke a sense of enchantment and mystery, as it is not a
-color commonly found in nature. Picture yourself standing in a serene landscape
-where various shades of purple dominate the surroundings. Here's a description
-of a purple scenery.
+-- card: Lucknow 💛
+
+.. where history dances in the courtyards and elegance graces the 
+streets, weaving tales of enchantment in every step.
+
 
 -- end: ftd.column
 
@@ -20,31 +19,25 @@ of a purple scenery.
 
 
 
-
-
-
-
-
-
-
 -- component card:
-caption title: Title
-body description: Description
+caption title: Default Title
+body description: Default body
 
 -- ftd.row:
 width.fixed.px: 650
 height.fixed.px: 350
-background.solid: #e6e6fa
-border-width.px: 5
-padding-horizontal.px: 20
-padding-vertical.px: 20
-spacing.fixed.px: 50
+background.solid: #e5e4d1
+border-width.px: 3
 border-radius.px: 20
+padding.px: 20
+spacing.fixed.px: 50
+
 
 -- ftd.image:
-src: https://w0.peakpx.com/wallpaper/861/211/HD-wallpaper-girl-road-transition-sakura-live-anime-art-thumbnail.jpg
+src: $assets.files.assets.pc-prashant-gautam.jpg
 height: fill-container
 border-radius.px: 20
+
 
 
 -- ftd.column:
@@ -60,6 +53,7 @@ role: $inherited.types.copy-regular
 -- end: ftd.column
 
 -- end: ftd.row
+
 
 
 -- end: card
