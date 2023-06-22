@@ -1,0 +1,257 @@
+-- ds.page: Building blocks
+
+
+
+-- ds.code: Step 1
+
+\-- ftd.column:
+width: fill-container
+height: fill-container
+background.solid: #eee
+
+\-- end: ftd.column
+
+-- end: ds.code
+
+
+
+
+
+-- ds.code: Step 2
+
+\-- ftd.row:
+width.fixed.px: 650
+height.fixed.px: 350
+background.solid: #c5dff5
+border-width.px: 3
+
+\-- end: ftd.row
+
+-- end: ds.code
+
+
+
+
+
+
+
+-- ds.code: Step 2.1
+
+\-- ftd.column:
+width: fill-container
+height: fill-container
+background.solid: #eee
+align-content: center		;;<hl>
+
+
+\-- end: ftd.column
+
+-- end: ds.code
+
+
+
+
+
+-- ds.code: Step 3.1
+
+\-- ftd.row:
+width.fixed.px: 650
+height.fixed.px: 350
+background.solid: #c5dff5
+border-width.px: 3
+
+
+\-- ftd.image:
+src: https://w0.peakpx.com/wallpaper/861/211/HD-wallpaper-girl-road-transition-sakura-live-anime-art-thumbnail.jpg
+height: fill-container
+
+
+-- end: ds.code
+
+
+
+
+-- ds.code: Step 4
+
+\-- ftd.row:
+width.fixed.px: 650
+height.fixed.px: 350
+background.solid: #c5dff5
+border-width.px: 3
+padding.px: 20 			;; <hl>
+border-radius.px: 20 	;; <hl>
+spacing.fixed.px: 50 	;; <hl>
+
+
+\-- ftd.image:
+src: https://w0.peakpx.com/wallpaper/861/211/HD-wallpaper-girl-road-transition-sakura-live-anime-art-thumbnail.jpg
+height: fill-container
+border-radius.px: 20 	;; <hl>
+
+-- end: ds.code
+
+
+
+
+
+
+
+
+-- ds.code: Step 5
+
+\-- ftd.column:
+
+\-- ftd.text: Title
+role: $inherited.types.heading-medium
+
+\-- ftd.text: 
+role: $inherited.types.copy-regular
+
+lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum 
+lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum 
+lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum 
+
+
+
+\-- end: ftd.column
+
+-- end: ds.code
+
+
+
+
+
+-- ds.h1: Moving it in the component
+
+-- ds.code: Step 6
+
+\-- component card:
+
+\-- ftd.row:
+width.fixed.px: 650
+height.fixed.px: 350
+background.solid: #c5dff5
+border-width.px: 5
+padding.px: 20
+spacing.fixed.px: 50
+border-radius.px: 20
+
+\-- ftd.image:
+src: https://w0.peakpx.com/wallpaper/861/211/HD-wallpaper-girl-road-transition-sakura-live-anime-art-thumbnail.jpg
+height: fill-container
+border-radius.px: 20
+
+
+\-- ftd.column:
+
+\-- ftd.text: Title
+role: $inherited.types.heading-medium
+
+\-- ftd.text: 
+role: $inherited.types.copy-regular
+
+lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum 
+lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum 
+lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum lorum Ipsum 
+ 
+
+
+\-- end: ftd.column
+
+\-- end: ftd.row
+
+\-- end: card
+
+-- end: ds.code
+
+
+
+
+
+-- ds.code: Step 7: Call the component
+
+\-- card:
+
+-- end: ds.code
+
+
+
+
+
+
+-- ds.code: Step 8: Multiple times
+
+\-- card:
+
+
+\-- card:
+
+-- end: ds.code
+
+
+
+-- ds.code: Step 9
+
+\-- ftd.column:
+width: fill-container
+height: fill-container
+background.solid: #eee
+spacing.fixed.px: 20		;;<hl>
+
+\-- end: ftd.column
+
+-- end: ds.code
+
+
+
+
+
+
+-- ds.code: Step 10: Different Content
+
+\-- component card:
+caption title: Default Title		;; <hl>
+body description: Default body		;; <hl>
+
+
+-- end: ds.code
+
+
+
+
+
+
+-- ds.code: Step 11
+
+\-- ftd.text: $card.title
+role: $inherited.types.heading-medium
+
+\-- ftd.text: $card.description
+role: $inherited.types.copy-regular
+
+
+
+
+-- end: ds.code
+
+
+
+-- ds.code: Step 12
+
+\-- card:
+
+
+\-- card: Lucknow 💛
+
+.. where history dances in the courtyards and elegance graces the 
+streets, weaving tales of enchantment in every step.
+
+-- end: ds.code
+
+
+
+
+
+
+
+-- end: ds.page
