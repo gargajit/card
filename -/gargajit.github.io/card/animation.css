@@ -1,0 +1,47 @@
+@keyframes lucknow {
+  0%   {left:0px; top:0px; color:deepskyblue;}
+  100%  {left:505px; top:0px; color:#cac678;}
+
+}
+
+.kuchbhi {
+  animation-name: lucknow;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes hyderabad {
+  0%   {left:505px; top:0px; color:#cac678;}
+  100%  {left:0px; top:0px; color:green;}
+}
+
+.kuchaur {
+  animation-name: hyderabad;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+
+
+@keyframes lucknowcard {
+  0%   { background-color:skyblue;}
+  100%  { background-color:#e5e4d1;}
+
+}
+
+.kuchbhicard {
+  animation-name: lucknowcard;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes hyderabadcard {
+  0%   { background-color:#e5e4d1;}
+  100%  { background-color:#a9c9a9;}
+}
+
+.kuchaurcard {
+  animation-name: hyderabadcard;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}

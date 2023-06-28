@@ -6,35 +6,79 @@ align-content: center
 spacing.fixed.px: 20
 
 
+-- web-page:
+
+-- ftd.text: 
+text if { !at-hyderabad }: Lucknow
+text: Hyderabad
+role: $inherited.types.heading-medium
+align-self: start
+color: #cac678
+color if { at-hyderabad }: green
+css: [$assets.files.animation.css]
+classes if { !at-hyderabad }: kuchbhi
+classes: kuchaur
+anchor: parent 
+top.px: 0
+left.px if { !at-hyderabad }: 505
+left.px: 0
+$on-click$: $ftd.toggle($a = $at-hyderabad)
+
 
 -- card: Lucknow 💛
+if: { !at-hyderabad }
 
-.. where history dances in the courtyards and elegance graces the 
+.. where history dances in the courtyards and elegance grace the 
 streets, weaving tales of enchantment in every step.
 
+
+-- card: Hyderabad 🍚
+if: { at-hyderabad }
+img: $assets.files.assets.pc-samuel.jpg
+bg-color: #a9c9a9
+
+.. where the past gracefully dances with the future, weaving a tapestry of
+heritage, innovation, and timeless charm.
+
+-- end: web-page
 
 -- end: ftd.column
 
 
+-- boolean $at-hyderabad: false  
 
+-- component web-page:
+children wrapper:
 
+-- ftd.column:
+width.fixed.px: 650
+height.fixed.px: 350
+children: $web-page.wrapper
+padding-top.px: 60
+
+-- end: ftd.column
+
+-- end: web-page
 
 -- component card:
 caption title: Default Title
 body description: Default body
+ftd.image-src img: $assets.files.assets.pc-prashant-gautam.jpg
+ftd.color bg-color: #e5e4d1
 
 -- ftd.row:
 width.fixed.px: 650
 height.fixed.px: 350
-background.solid: #e5e4d1
-border-width.px: 3
+background.solid: $card.bg-color
 border-radius.px: 20
 padding.px: 20
 spacing.fixed.px: 50
+classes if { !at-hyderabad }: kuchbhicard
+classes: kuchaurcard
 
 
 -- ftd.image:
-src: $assets.files.assets.pc-prashant-gautam.jpg
+src: $card.img
 height: fill-container
 border-radius.px: 20
 
