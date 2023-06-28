@@ -7,7 +7,6 @@
 .kuchbhi {
   animation-name: lucknow;
   animation-duration: 4s;
-  animation-iteration-count: 1;
 }
 
 @keyframes hyderabad {
@@ -18,7 +17,6 @@
 .kuchaur {
   animation-name: hyderabad;
   animation-duration: 4s;
-  animation-iteration-count: 1;
 }
 
 
@@ -32,7 +30,6 @@
 .kuchbhicard {
   animation-name: lucknowcard;
   animation-duration: 4s;
-  animation-iteration-count: 1;
 }
 
 @keyframes hyderabadcard {
@@ -43,5 +40,4 @@
 .kuchaurcard {
   animation-name: hyderabadcard;
   animation-duration: 4s;
-  animation-iteration-count: 1;
 }
