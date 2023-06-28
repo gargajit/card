@@ -28,13 +28,13 @@ $on-click$: $ftd.toggle($a = $at-hyderabad)
 -- card: Lucknow 💛
 if: { !at-hyderabad }
 
-.. where history dances in the courtyards and elegance graces the 
+.. where history dances in the courtyards and elegance grace the 
 streets, weaving tales of enchantment in every step.
 
 
 -- card: Hyderabad 🍚
 if: { at-hyderabad }
-img: $assets.files.pc-samuel.jpg
+img: $assets.files.assets.pc-samuel.jpg
 bg-color: #a9c9a9
 
 .. where the past gracefully dances with the future, weaving a tapestry of
@@ -63,7 +63,7 @@ padding-top.px: 60
 -- component card:
 caption title: Default Title
 body description: Default body
-ftd.image-src img: $assets.files.pc-prashant-gautam.jpg
+ftd.image-src img: $assets.files.assets.pc-prashant-gautam.jpg
 ftd.color bg-color: #e5e4d1
 
 -- ftd.row:
